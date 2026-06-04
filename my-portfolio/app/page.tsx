@@ -49,7 +49,7 @@ export default function Home() {
       <div className="fixed inset-0 z-50 pointer-events-none opacity-[0.03]" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}></div>
       <div className="fixed inset-0 bg-[radial-gradient(#E8E6D9_1px,transparent_1px)] [background-size:40px_40px] opacity-[0.03] pointer-events-none z-10"></div>
 
-      {}
+      {/* --- ANA VİTRİN --- */}
       <section className="relative min-h-screen flex flex-col items-center justify-center p-8 overflow-hidden">
         <div className="absolute left-4 top-0 bottom-0 hidden md:flex flex-col justify-between py-12 text-[#E8E6D9] opacity-20 text-xs z-10 select-none">
           {[...Array(20)].map((_, i) => (<span key={i}>{String(i + 1).padStart(2, '0')}</span>))}
@@ -107,7 +107,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {}
+      {/* --- PROJELER BÖLÜMÜ --- */}
       <section id="projects" className="relative min-h-screen py-32 px-8 max-w-5xl mx-auto z-20">
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mb-20">
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-2">Projects<span className="text-[#8A9A5B]">.</span></h2>
@@ -135,7 +135,7 @@ export default function Home() {
         </div>
       </section>
 
-      {}
+      {/* --- HAKKIMDA (GELİŞMİŞ MÜHENDİSLİK VE SANAT VİTRİNİ) --- */}
       <section id="about" className="relative min-h-screen py-32 px-8 max-w-6xl mx-auto z-20 border-t border-[#E8E6D9]/10">
         
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mb-20 text-right">
@@ -167,10 +167,8 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {}
           <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-10">
             
-            {}
             <div className="md:col-span-2">
               <h4 className="text-[#8A9A5B] uppercase tracking-widest text-xs mb-4 font-bold border-b border-[#8A9A5B]/30 pb-2">Core Programming & Logic</h4>
               <div className="flex flex-wrap gap-2">
@@ -182,7 +180,6 @@ export default function Home() {
               </div>
             </div>
 
-            {}
             <div>
               <h4 className="text-[#722F37] uppercase tracking-widest text-xs mb-4 font-bold border-b border-[#722F37]/30 pb-2">Web & Mobile Dev</h4>
               <div className="flex flex-wrap gap-2">
@@ -193,7 +190,6 @@ export default function Home() {
               </div>
             </div>
 
-            {}
             <div>
               <h4 className="text-[#8A9A5B] uppercase tracking-widest text-xs mb-4 font-bold border-b border-[#8A9A5B]/30 pb-2">Systems & Data</h4>
               <div className="flex flex-wrap gap-2">
@@ -204,7 +200,6 @@ export default function Home() {
               </div>
             </div>
 
-            {}
             <div>
               <h4 className="text-[#722F37] uppercase tracking-widest text-xs mb-4 font-bold border-b border-[#722F37]/30 pb-2">Leadership & Arts</h4>
               <div className="flex flex-col gap-3">
@@ -223,7 +218,6 @@ export default function Home() {
               </div>
             </div>
 
-            {}
             <div className="flex flex-col gap-6">
               <div>
                 <h4 className="text-[#E8E6D9] uppercase tracking-widest text-xs mb-4 font-bold opacity-80 border-b border-[#E8E6D9]/20 pb-2">Discipline</h4>
@@ -244,12 +238,25 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </motion.div>
         </div>
       </section>
 
-      {}
+      <section className="py-10 px-8 flex flex-col items-center gap-6 border-t border-[#E8E6D9]/10">
+        <div className="flex gap-6 font-bold">
+          <a href="https://github.com/ssuheyyo" target="_blank">GITHUB</a>
+          <a href="https://linkedin.com/in/suheyna-karakurt" target="_blank">LINKEDIN</a>
+        </div>
+        <div className="flex gap-4 text-xs opacity-60">
+          <a href="https://instagram.com/ssuheyyo" target="_blank">IG (personal)</a>
+          <a href="https://instagram.com/suhey.studio" target="_blank">BLOG</a>
+          <a href="https://tiktok.com/@ch2riee" target="_blank">TAROT</a>
+          <a href="https://tiktok.com/@suheyyo" target="_blank">TT (personal)</a>
+          <a href="https://tiktok.com/@ssuheyyo" target="_blank">TT (tarot)</a>
+          <a href="https://youtube.com/@ssuheyyo" target="_blank">YT</a>
+        </div>
+      </section>
+
       <section id="journal" className="relative min-h-[50vh] py-32 px-8 max-w-5xl mx-auto z-20 border-t border-[#E8E6D9]/10">
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mb-12 text-center">
           <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-2">Journal<span className="text-[#8A9A5B] animate-pulse">_</span></h2>
