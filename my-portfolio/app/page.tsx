@@ -147,6 +147,14 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="lg:col-span-5 flex flex-col gap-8">
+            
+            {/* ŞIK FOTOĞRAF ALANI (Tasarımı bozmaz, metnin üstüne entegre edilmiştir) */}
+            <div className="relative w-full max-w-[240px] aspect-[4/5] mb-2 group">
+              <div className="absolute inset-0 bg-[#8A9A5B] translate-x-3 translate-y-3 opacity-30 -z-10 transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4 group-hover:opacity-50"></div>
+              {/* public klasörüne profil.jpg adında bir resim atarsan burada görünecek */}
+              <img src="/profil.jpg" alt="Süheyna Karakurt" className="w-full h-full object-cover border border-[#E8E6D9]/20 grayscale hover:grayscale-0 transition-all duration-500" />
+            </div>
+
             <div className="text-[#E8E6D9] opacity-90 leading-relaxed font-light text-lg">
               <p className="mb-4">
                 I am a 19-year-old Computer Programming student at Yaşar University, with a heavy focus on software engineering, data analysis, and mobile architecture.
@@ -242,21 +250,36 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-10 px-8 flex flex-col items-center gap-6 border-t border-[#E8E6D9]/10">
-        <div className="flex gap-6 font-bold">
-          <a href="https://github.com/ssuheyyo" target="_blank">GITHUB</a>
-          <a href="https://linkedin.com/in/suheyna-karakurt" target="_blank">LINKEDIN</a>
-        </div>
-        <div className="flex gap-4 text-xs opacity-60">
-          <a href="https://instagram.com/ssuheyyo" target="_blank">IG (personal)</a>
-          <a href="https://instagram.com/suhey.studio" target="_blank">BLOG</a>
-          <a href="https://tiktok.com/@ch2riee" target="_blank">TAROT</a>
-          <a href="https://tiktok.com/@suheyyo" target="_blank">TT (personal)</a>
-          <a href="https://tiktok.com/@ssuheyyo" target="_blank">TT (tarot)</a>
-          <a href="https://youtube.com/@ssuheyyo" target="_blank">YT</a>
+      {/* --- YENİLENMİŞ VE KATEGORİZE EDİLMİŞ SOSYAL MEDYA BÖLÜMÜ --- */}
+      <section className="py-20 px-8 flex flex-col items-center border-t border-[#E8E6D9]/10 w-full max-w-5xl mx-auto z-20 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full text-center md:text-left">
+          
+          {/* Business Linkleri */}
+          <div className="flex flex-col items-center md:items-start gap-6">
+            <h4 className="text-[#8A9A5B] uppercase tracking-widest text-xs font-bold border-b border-[#8A9A5B]/30 pb-2 w-full max-w-[250px]">Business & Professional</h4>
+            <div className="flex flex-wrap justify-center md:justify-start gap-6 text-[0.8rem] font-medium tracking-widest uppercase">
+              <a href="https://github.com/ssuheyyo" target="_blank" className="hover:text-[#8A9A5B] transition-colors duration-300">GITHUB</a>
+              <a href="https://linkedin.com/in/süheyna-karakurt-bb2086323" target="_blank" className="hover:text-[#8A9A5B] transition-colors duration-300">LINKEDIN</a>
+            </div>
+          </div>
+
+          {/* Personal Linkleri */}
+          <div className="flex flex-col items-center md:items-start gap-6">
+            <h4 className="text-[#722F37] uppercase tracking-widest text-xs font-bold border-b border-[#722F37]/30 pb-2 w-full max-w-[250px]">Personal & Creative</h4>
+            <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-4 text-[0.8rem] font-medium tracking-widest uppercase opacity-80">
+              <a href="https://instagram.com/ssuheyyo" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">IG (Personal)</a>
+              <a href="https://instagram.com/suheystudio" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">Blog</a>
+              <a href="https://tiktok.com/@ch2riee" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">Tarot</a>
+              <a href="https://tiktok.com/@suheyyo" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">TT (Personal)</a>
+              <a href="https://tiktok.com/@ssuheyyo" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">TT (Tarot)</a>
+              <a href="https://youtube.com/@ssuheyyo" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">Youtube</a>
+            </div>
+          </div>
+
         </div>
       </section>
 
+      {/* --- JOURNAL (GÜNLÜK) --- */}
       <section id="journal" className="relative min-h-[50vh] py-32 px-8 max-w-5xl mx-auto z-20 border-t border-[#E8E6D9]/10">
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mb-12 text-center">
           <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-2">Journal<span className="text-[#8A9A5B] animate-pulse">_</span></h2>
