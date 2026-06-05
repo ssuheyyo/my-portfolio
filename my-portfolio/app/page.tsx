@@ -269,9 +269,8 @@ export default function Home() {
             <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-4 text-[0.8rem] font-medium tracking-widest uppercase opacity-80">
               <a href="https://instagram.com/ssuheyyo" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">IG (Personal)</a>
               <a href="https://instagram.com/suheystudio" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">Blog</a>
-              <a href="https://tiktok.com/@ch2riee" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">Tarot</a>
+              <a href="https://tiktok.com/@ch2riee" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">TT - Tarot</a>
               <a href="https://tiktok.com/@suheyyo" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">TT (Personal)</a>
-              <a href="https://tiktok.com/@ssuheyyo" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">TT (Tarot)</a>
               <a href="https://youtube.com/@ssuheyyo" target="_blank" className="hover:text-[#722F37] transition-colors duration-300">Youtube</a>
             </div>
           </div>
